@@ -2,7 +2,7 @@ import expect from 'expect'
 import React from 'react'
 import { shallow } from 'enzyme'
 import AsyncAutoSelect from './AsyncAutoSelect'
-import createMountWithContext from './utils/createMountWithContext'
+import createMountWithContext from './utils/__test__/createMountWithContext'
 
 describe('AsyncAutoSelect', () => {
   const mount = createMountWithContext()

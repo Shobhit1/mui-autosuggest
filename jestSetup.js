@@ -15,21 +15,16 @@ global.context = describe
 global.localStorage = storageImpl
 global.sessionStorage = storageImpl
 
-global.browserHistory = jest.mock('react-router', () => ({ browserHistory: { push: jest.fn() } }))
-
 // mock xhr utility
-jest.mock(
-  'utils/xhr',
-  () => ({
-    get: () => Promise.resolve(),
-    post: () => Promise.resolve(),
-    put: () => Promise.resolve(),
-    delete: () => Promise.resolve(),
-  }),
-  {
-    virtual: true,
-  }
-)
-
-mockCStackModules()
-mockGStackModules()
+// jest.mock(
+//   'utils/xhr',
+//   () => ({
+//     get: () => Promise.resolve(),
+//     post: () => Promise.resolve(),
+//     put: () => Promise.resolve(),
+//     delete: () => Promise.resolve(),
+//   }),
+//   {
+//     virtual: true,
+//   }
+// )

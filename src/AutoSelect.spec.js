@@ -1,9 +1,9 @@
 import expect from 'expect'
 import React from 'react'
 import { shallow } from 'enzyme'
-import createMountWithContext from 'utils/test/createMountWithContext'
-import { AutoSelectOptions } from 'components/core/AutoSelectOptions'
-import AutoSelect from 'components/core/AutoSelect'
+import createMountWithContext from './utils/__test__/createMountWithContext'
+import { AutoSelectOptions } from './AutoSelectOptions'
+import AutoSelect from './AutoSelect'
 import { makes } from './AutoSelectFixtures'
 
 describe('AutoSelect', () => {
