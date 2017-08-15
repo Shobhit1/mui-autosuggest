@@ -1,0 +1,22 @@
+{
+  "tags": {
+      "allowUnknownTags": true,
+      "dictionaries": ["jsdoc","closure"]
+  },
+  "source": {
+      "include": "src",
+      "includePattern": ".+\\.js$",
+      "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["node_modules/jsdoc-babel"],
+   "babel": {
+     "presets": ["react", "stage-0"]
+   },
+  "templates": {
+      "cleverLinks": false,
+      "monospaceLinks": false
+  },
+  "opts": {
+    "recurse": true
+  }
+}

@@ -1,0 +1,25 @@
+.options {
+  composes: topLeftPopout from './topLeftPopout.css';
+
+  max-height: 200px;
+  z-index: 10000;
+
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}
+
+.option {
+  height: 50px;
+  padding-top: .5em;
+  text-transform: capitalize;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+
+  background-color: white;
+}
+
+.selectedOption {
+  background-color: rgba(158,158,158,.2);
+}
