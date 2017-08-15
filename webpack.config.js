@@ -1,7 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
-const WebpackShellPlugin = require('webpack-shell-plugin');
+// const WebpackShellPlugin = require('webpack-shell-plugin')
 
 const { join, resolve } = path
 
@@ -37,9 +37,9 @@ module.exports = {
         'BABEL_ENV': JSON.stringify('production')
       }
     }),
-    new WebpackShellPlugin({
-      onBuildEnd: ['npm run docs']
-    }),
+    // new WebpackShellPlugin({
+    //   onBuildEnd: ['npm run docs']
+    // }),
     new CaseSensitivePathsPlugin(),
   ],
   module: {
