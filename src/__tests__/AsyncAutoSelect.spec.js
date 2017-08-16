@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import AsyncAutoSelect from './AsyncAutoSelect'
-import createMountWithContext from './utils/__test__/createMountWithContext'
+import AsyncAutoSelect from '../AsyncAutoSelect'
+import createMountWithContext from '../utils/__test__/createMountWithContext'
 
 describe('AsyncAutoSelect', () => {
   const mount = createMountWithContext()
@@ -14,8 +14,13 @@ describe('AsyncAutoSelect', () => {
     label: 'My AutoSelect field',
   }
 
+  it('autoselect is rendered properly', () => {
+    const shallowRenderedComponent = shallow(<AsyncAutoSelect {...requiredProps} fetchOptions={(setOptions) => setOptions([1, 2, 3])} />)
+    expect(shallowRenderedComponent).toMatchSnapshot()
+  })
+
   it('initializes with empty options', () => {
-    const makeAutoSelectAsync = shallow(<AsyncAutoSelect {...requiredProps} fetchOptions={(setOptions) => setOptions([1, 2, 3])} />)    
+    const makeAutoSelectAsync = shallow(<AsyncAutoSelect {...requiredProps} fetchOptions={(setOptions) => setOptions([1, 2, 3])} />)
     expect(makeAutoSelectAsync).toMatchSnapshot()
     expect(makeAutoSelectAsync.state('options')).toEqual([])
   })

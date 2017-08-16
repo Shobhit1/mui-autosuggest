@@ -1,5 +1,5 @@
 {
-  "name": "mui-autosuggest",
+  "name": "mui-react-autosuggest",
   "version": "0.0.0",
   "description": "Autosuggest component with input capabilities",
   "main": "index.js",

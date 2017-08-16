@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`AsyncAutoSelect autoselect is rendered properly 1`] = `
+<AutoSelect
+  Options={[Function]}
+  disabled={false}
+  displayOption={[Function]}
+  displaySelectedOption={null}
+  errorText=""
+  label="My AutoSelect field"
+  name="myAutoSelectField"
+  onFocus={[Function]}
+  options={Array []}
+  preload={false}
+  required={false}
+  serializeOption={[Function]}
+  value=""
+/>
+`;
+
 exports[`AsyncAutoSelect initializes with empty options 1`] = `
 <AutoSelect
   Options={[Function]}
